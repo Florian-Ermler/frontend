@@ -27,7 +27,7 @@ export default defineComponent({
     async setup() {
         const data = ref();
         try {
-            const res = await fetch('https://rest.ermler.dev/api/wine/');
+            const res = await fetch('https://directus.ermler.dev/items/wine/');
             data.value = await res.json();
         } catch (e) {
             console.log(e);
